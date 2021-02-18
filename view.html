@@ -85,7 +85,7 @@
         // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
         searchedCharacter = searchedCharacter.replace(/\s+/g, '').toLowerCase();
 
-        fetch(`/api/characters/${searchedCharacter}`, {
+        fetch(`https://lit-wave-08341.herokuapp.com/api/characters/${searchedCharacter}`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
